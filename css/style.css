@@ -1,0 +1,188 @@
+/* 
+General classes
+*/
+.border {
+  border: 4px solid red;
+}
+:root {
+  --bodyBG: #f6f6f6;
+  --bodyfont: #2b3445;
+  --blue-button: #1976d2;
+  --blue: #9fc5ef;
+  --icons: #40464d;
+  --footerBG: #212529;
+  
+}
+
+body {
+  background-color: var(--bodyBG);
+  color: var(--bodyfont);
+}
+
+.felx {
+  display: flex;
+  align-items: center;
+}
+
+a,
+button {
+  all: unset;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+button:active,
+a:active {
+  scale: 0.8;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  scale: 1;
+}
+
+/* General Css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: system-ui;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.fa-solid:not(.fa-bag-shopping) {
+  margin-right: 0.3rem;
+}
+
+main {
+  width: 80%;
+  margin-inline: auto;
+}
+
+@media (width < 600px) {
+  main {
+    width: 100%;
+  }
+
+  main .Recommended-for-you {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+  }
+}
+/* ============================
+      start style project
+=============================== */
+
+div.top-img {
+  height: 100dvh;
+  position: relative;
+}
+
+section.content {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10%;
+}
+
+section.content .lifestyle {
+  color: rgba(0, 0, 0, 0.687);
+  text-transform: uppercase;
+}
+
+section.content .men,
+.sale {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section.content .sale span {
+  color: red;
+  margin-left: 0.8rem;
+}
+
+section.content .free-shopping {
+  color: rgba(0, 0, 0, 0.687);
+}
+
+section.content button {
+  background-color: black;
+  color: white;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 0.6rem 1.6rem;
+}
+
+/* =========================
+        MAIN PRODUCTS
+=============================*/
+main .Recommended-for-you {
+  margin: 2rem 2%;
+}
+section.products {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+article.card {
+  border-radius: 5px;
+  width: 266px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 1px -1px, rgba(0, 0, 0, 0.14) 0 1px 1px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 3px 0;
+  transition: 0.2s;
+}
+
+article.card img {
+  box-shadow: rgba(0, 0, 0, 0.14) 0 1px 10px 0;
+  border-radius: 5px;
+}
+article.card:hover {
+  scale: 1.01;
+}
+
+article.card .content-product .title {
+  padding: 0.6rem 0.4rem 0;
+  text-transform: capitalize;
+}
+
+article.card .content-product .discription {
+  padding-inline: 0.4rem;
+  font-size: 0.8rem;
+  margin: 0.4rem 0 0.6rem;
+  line-height: 1, 1rem;
+}
+
+article.card .content-product .price {
+  margin-left: 0.9rem;
+  font-size: 0.9rem;
+  color: red;
+  font-weight: bold;
+}
+article.card .content-product .price-button {
+  justify-content: space-between;
+  padding-bottom: 0.7rem;
+}
+
+article.card .content-product .add-to-cart {
+  background-color: rgba(29, 29, 255, 0.811);
+  color: white;
+  font-weight: 500;
+  padding: 6px 8px;
+  margin-right: 0.9rem;
+  font-size: 0.7rem;
+  border-radius: 5px;
+}

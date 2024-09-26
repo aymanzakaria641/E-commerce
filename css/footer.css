@@ -1,0 +1,13 @@
+footer {
+    background-color: var(--footerBG);
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    padding-block: 1rem;
+}
+
+footer span {
+    color: #ff7790;
+    text-transform: capitalize;
+}

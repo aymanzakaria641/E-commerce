@@ -1,0 +1,100 @@
+body {
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+}
+
+header.felx {
+  background-color: var(--footerBG);
+  color: white;
+  border-radius: 0 0 8px 8px;
+  padding-block: 0.6rem;
+}
+
+header.felx .logo .fa-solid {
+  font-size: 1.5rem;
+}
+
+header.felx .logo:hover {
+  scale: 0.9;
+}
+
+header.felx .cart:hover,
+header.felx .Sign-in:hover,
+header.felx .register:hover {
+  border: 1px solid rgb(152, 154, 189);
+  padding: 0.6rem 1.3rem;
+}
+
+main.felx {
+  max-width: 800px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 1px -1px, rgba(0, 0, 0, 0.14) 0 1px 1px 0,
+    rgba(0, 0, 0, 0.12) 0 1px 3px 0;
+    border-radius: 8px;
+    background-color: white;
+}
+
+@media ( width < 800px ) {
+    main.felx {
+        flex-wrap: wrap;
+        width: 350px;
+    }
+    main.felx img {
+        margin-inline: auto;
+        width: 260px;
+    }
+    .add-to-cart {
+      margin-inline: auto;
+    }
+}
+
+main.felx img {
+  width: 266px;
+  border-radius: 8px;
+}
+.details {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.4rem 0.6rem 0.6rem;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.title {
+  & h2 {
+    text-transform: capitalize;
+  }
+
+  & span {
+    color: rgba(241, 0, 0, 0.906);
+    font-weight: bold;
+  }
+}
+
+.discription {
+  margin-block: 1.2rem;
+  line-height: 1.44rem;
+  text-align: left;
+  text-wrap: balance;
+}
+
+.add-to-cart {
+  display: block;
+  width: 200px;
+  background-color: rgba(29, 29, 255, 0.811);
+  color: white;
+  font-weight: bold;
+  padding: 6px 8px;
+  margin-right: 0.9rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
